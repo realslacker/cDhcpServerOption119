@@ -1,0 +1,8 @@
+
+[ClassVersion("0.1.0.0"), FriendlyName("xDhcpScopeOption119Value")]
+class DSC_DhcpScopeOption119ValueResource : OMI_BaseResource
+{
+    [Write, Description("Specifies whether DHCP option 119 is configured at the scope level."), ValueMap{"Present", "Absent"}, Values{"Present", "Absent"}] String Ensure;
+    [Write, Description("DHCP scope search domains will be applied to.")] String ScopeId;
+    [Write, Description("Array of search domains.")] String SearchDomains[];
+};

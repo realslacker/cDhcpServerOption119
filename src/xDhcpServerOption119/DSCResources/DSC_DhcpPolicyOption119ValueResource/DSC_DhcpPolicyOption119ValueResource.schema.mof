@@ -1,0 +1,8 @@
+
+[ClassVersion("0.1.0.0"), FriendlyName("xDhcpPolicyOption119Value")]
+class DSC_DhcpPolicyOption119ValueResource : OMI_BaseResource
+{
+    [Write, Description("Specifies whether DHCP option 119 is configured at the policy level."), ValueMap{"Present", "Absent"}, Values{"Present", "Absent"}] String Ensure;
+    [Write, Description("DHCP policy search domains will be applied to.")] String PolicyName;
+    [Write, Description("Array of search domains.")] String SearchDomains[];
+};

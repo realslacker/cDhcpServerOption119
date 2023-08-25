@@ -1,0 +1,8 @@
+
+[ClassVersion("0.1.0.0"), FriendlyName("xDhcpReservedIPOption119Value")]
+class DSC_DhcpReservedIPOption119ValueResource : OMI_BaseResource
+{
+    [Write, Description("Specifies whether DHCP option 119 is configured at the reservation level."), ValueMap{"Present", "Absent"}, Values{"Present", "Absent"}] String Ensure;
+    [Write, Description("DHCP reservation search domains will be applied to.")] String ReservedIP;
+    [Write, Description("Array of search domains.")] String SearchDomains[];
+};

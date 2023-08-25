@@ -1,5 +1,5 @@
 # xDhcpServerOption119
-DHCP Server Option 119 DSC Resources
+This DSC resource helps you to correctly configure DHCP option 119 on your Microsoft DHCP server. This module works best as an extension to [xDhcpServer](https://github.com/dsccommunity/xDhcpServer).
 
 ## Example
 
